@@ -22,12 +22,14 @@ yarn test
 
 see env-example for environment variables
 
-### User Registration (Sign Up)
+### Upbase BackEnd Documentation
 
-A user can Sign Up by passing the following parameters:
-"firstName", "lastName", "userName", "gender", "email", "password"
+[a link](https://documenter.getpostman.com/view/15415179/TzsWs9gX)
 
-### User Login (Sign In)
+### Upbase BackEnd Heroku URL
 
-A user can Sign In by passing the following parameters:
-"email", "password"
+[a link](https://upbase-limited.herokuapp.com/)
+
+### Created by David Enoragbon
+
+[a link](https://www.linkedin.com/in/davidenoragbon/)
