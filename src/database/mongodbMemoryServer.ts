@@ -1,12 +1,12 @@
 import { connect, connection } from 'mongoose';
 import { MongoMemoryServer } from 'mongodb-memory-server';
 
-const mongoDb = new MongoMemoryServer();
-
+let mongod: any;
 export const testDbConnect = async () => {
   console.log('testDbConnect', ' from testDbConnect');
+  mongod = await MongoMemoryServer.create();
 
-  const uri = await mongoDb.getUri();
+  const uri = await mongod.getUri();
   const monogoDbOptions = {
     useNewUrlParser: true,
     useCreateIndex: true,
@@ -24,5 +24,5 @@ export const testDbConnect = async () => {
 export const dbDisconnect = async () => {
   await connection.dropDatabase();
   await connection.close();
-  await mongoDb.stop();
+  await mongod.stop();
 };
