@@ -25,7 +25,7 @@ see env-example for environment variables
 ### User Registration (Sign Up)
 
 A user can Sign Up by passing the following parameters:
-"firstName", "lastName", "userName", "gender", "email", "password", "dateOfBirth"
+"firstName", "lastName", "userName", "gender", "email", "password"
 
 ### User Login (Sign In)
 

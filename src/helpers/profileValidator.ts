@@ -7,7 +7,8 @@ export const validateProfileUpdate = (userSignUp: UserSignUp) => {
     lastName: Joi.string().min(2),
     userName: Joi.string().min(2),
     gender: Joi.string(),
-    password: Joi.string().min(6),
+    profile_picture: Joi.string(),
+    cloudinary_id: Joi.string(),
   });
   return Schema.validate(userSignUp);
 };

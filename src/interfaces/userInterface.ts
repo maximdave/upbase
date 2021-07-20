@@ -5,6 +5,8 @@ export interface UserSignUp {
   gender: string;
   email: string;
   password: string;
+  profile_picture?: string;
+  cloudinary_id?: string;
 }
 
 export interface UserLogin {

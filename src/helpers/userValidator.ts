@@ -1,5 +1,5 @@
 import Joi from 'joi';
-import { UserSignUp, UserLogin } from '../interfaces/userInterface';
+import { UserSignUp } from '../interfaces/userInterface';
 
 export const validateSignUp = (userSignUp: UserSignUp) => {
   const Schema = Joi.object({
@@ -9,6 +9,8 @@ export const validateSignUp = (userSignUp: UserSignUp) => {
     gender: Joi.string().required(),
     email: Joi.string().email().required(),
     password: Joi.string().min(6).required(),
+    profile_picture: Joi.string(),
+    cloudinary_id: Joi.string(),
   });
   return Schema.validate(userSignUp);
 };
